@@ -13,4 +13,4 @@ def test_ShouldReturnFizzBuzz_whenNumberIsDividedByThreeAndFive():
     assert fizzBuzz(30) == "FizzBuzz"
 
 def test_ShouldReturnNone_whenNumberIsNotDividedByThreeOrFive():
-    assert fizzBuzz(2) == None
+    assert fizzBuzz(2) == str(2)

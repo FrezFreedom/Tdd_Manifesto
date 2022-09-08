@@ -12,4 +12,4 @@ def fizzBuzz(number: int) -> str:
         return "Fizz"
     elif divisibleByFive:
         return "Buzz"
-    return None
+    return str(number)
