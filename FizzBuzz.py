@@ -1,21 +1,15 @@
 
 
-def checkNumberIsDividedByThree(number: int) -> bool:
-    return number % 3 == 0
-
-def checkNumberIsDividedByFive(number: int) -> bool:
-    return number % 5 == 0
-
-def checkNumberIsDividedByThreeAndFive(number: int) -> bool:
-    return checkNumberIsDividedByThree(number) and checkNumberIsDividedByFive(number)
-
-
 def fizzBuzz(number: int) -> str:
 
-    if checkNumberIsDividedByThreeAndFive(number):
+    divisibleByThree: bool = (number % 3 == 0)
+    divisibleByFive: bool = (number % 5 == 0)
+    divisibleByThreeAndFive: bool = divisibleByThree and divisibleByFive
+
+    if divisibleByThreeAndFive:
         return "FizzBuzz"
-    elif checkNumberIsDividedByThree(number):
+    elif divisibleByThree:
         return "Fizz"
-    elif checkNumberIsDividedByFive(number):
+    elif divisibleByFive:
         return "Buzz"
     return None
